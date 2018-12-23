@@ -1,0 +1,10 @@
+.heading {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.myCarousel {
+  padding-top: 10px;
+  max-height: 400px !important;
+}
