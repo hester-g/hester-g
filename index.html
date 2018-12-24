@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS, then mine -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrapV4.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <!-- title and logo -->
@@ -17,16 +17,16 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script src="js/bootstrapV4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-    <div class="heading">
+    <div class="container heading"  id="home-page">
       <h1 class="display-1">Hello, world! Hello, trees! Hello, flowers! Hello, people!</h1>
     </div>
 
     <!-- the navigation bar-->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-md sticky-top navbar-custom">
      <!-- Brand -->
-     <a class="navbar-brand" href="img/logo.png" alt="Logo">
+     <a class="navbar-brand" href="#" alt="Logo">
       Mosshayne Farm
      </a>
      <!-- Toggler/collapsibe Button -->
@@ -38,13 +38,13 @@
      <div class="collapse navbar-collapse" id="collapsibleNavbar">
        <ul class="navbar-nav">
          <li class="nav-item">
-           <a class="nav-link" href="#">Link</a>
+           <a class="nav-link disabled" href="vegetables.html">Vegetables</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="#">Link</a>
+           <a class="nav-link" href="accommodation.html">Places To Stay</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="#">Link</a>
+           <a class="nav-link" href="history.html">History</a>
          </li>
        </ul>
      </div>
@@ -56,67 +56,124 @@
       <br/>
 
       <!-- the carousel-->
-      <div class="container w-50">
-        <div id="farm-carousel" class="carousel slide" data-ride="carousel">
+      <div class="row">
+        <div class="col-md">
+          <div class="container w-75">
+            <div id="farm-carousel" class="carousel slide" data-ride="carousel">
 
-          <!-- Indicators -->
-          <ul class="carousel-indicators">
-            <li data-target="#farm-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#farm-carousel" data-slide-to="1"></li>
-            <li data-target="#farm-carousel" data-slide-to="2"></li>
-            <li data-target="#farm-carousel" data-slide-to="3"></li>
-          </ul>
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#farm-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#farm-carousel" data-slide-to="1"></li>
+                <li data-target="#farm-carousel" data-slide-to="2"></li>
+                <li data-target="#farm-carousel" data-slide-to="3"></li>
+              </ul>
 
-          <!-- The slideshow -->
-          <div class="carousel-inner myCarousel">
-            <div class="carousel-item active">
-              <img src="img/farm-carousel/DSC_4635-1-2.jpg" alt="Farm Picture"class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-              <img src="img/farm-carousel/DSC_4653-5-2.jpg" alt="Farm Picture" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-              <img src="img/farm-carousel/DSC_4732-22-2.jpg" alt="Farm Picture" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-              <img src="img/farm-carousel/DSC_4808-38-2.jpg" alt="Farm Picture" class="d-block w-100">
+              <!-- The slideshow -->
+              <div class="carousel-inner myCarousel">
+                <div class="carousel-item active">
+                  <img src="img/farm-carousel/DSC_4635-1-2.jpg" alt="Farm Picture"class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/farm-carousel/DSC_4653-5-2.jpg" alt="Farm Picture" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/farm-carousel/DSC_4732-22-2.jpg" alt="Farm Picture" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/farm-carousel/DSC_4808-38-2.jpg" alt="Farm Picture" class="d-block w-100">
+                </div>
+              </div>
+
+              <!-- Left and right controls -->
+              <div>
+                <a class="carousel-control-prev" href="#farm-carousel" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#farm-carousel" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+
             </div>
           </div>
-
-          <!-- Left and right controls -->
-          <div>
-            <a class="carousel-control-prev" href="#farm-carousel" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#farm-carousel" data-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </a>
-          </div>
-
         </div>
       </div>
 
       <br/>
 
+      <!-- intro text here -->
+      <div class="row">
+        <div class="col-md">
+          <p class="lead">
+            This is Mosshayne Farm, an organic farm that has
+            been in the Gent family for generations. Providing high-quality
+            stuff innit. Come to the farm for a good time not a long time lol.
+          </p>
+        </div>
+      </div>
+
       <!-- the profiles-->
       <div class="row">
         <div class="col-md">
-          <div class="card" style="width:400px">
-            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+          <div class="card" style="max-width: 400px;">
+
+            <!-- Heading -->
             <div class="card-body">
-              <h4 class="card-title">John Doe</h4>
-              <p class="card-text">Some example text.</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
+            <h4 class="card-title">Henry Gent</h4>
+            <h6 class="card-subtitle text-muted">Farmer</h6>
             </div>
+
+            <!-- Image -->
+            <img class="card-img-top profile-custom img-responsive" src="img/farm-carousel/DSC_4808-38-2.jpg" alt="Photo of sunset">
+
+            <!-- Text Content -->
+            <div class="card-body">
+            <p class="card-text">I like farming, compost and badgers. Today I will be mostly wearing blue. I'm also out, standing in my field in this picture.</p>
+            </div>
+
           </div>
         </div>
         <div class="col-md">
+          <div class="card" style="max-width: 400px;">
 
+            <!-- Heading -->
+            <div class="card-body">
+            <h4 class="card-title">Henry Gent</h4>
+            <h6 class="card-subtitle text-muted">Farmer</h6>
+            </div>
+
+            <!-- Image -->
+            <img class="card-img-top profile-custom img-responsive" src="img/farm-carousel/DSC_4808-38-2.jpg" alt="Photo of sunset">
+
+            <!-- Text Content -->
+            <div class="card-body">
+            <p class="card-text">I like farming, compost and badgers. Today I will be mostly wearing blue. I'm also out, standing in my field in this picture.</p>
+            </div>
+
+          </div>
         </div>
         <div class="col-md">
+          <div class="card" style="max-width: 400px;">
 
+            <!-- Heading -->
+            <div class="card-body">
+            <h4 class="card-title">Henry Gent</h4>
+            <h6 class="card-subtitle text-muted">Farmer</h6>
+            </div>
+
+            <!-- Image -->
+            <img class="card-img-top profile-custom img-responsive" src="img/farm-carousel/DSC_4808-38-2.jpg" alt="Photo of sunset">
+
+            <!-- Text Content -->
+            <div class="card-body">
+            <p class="card-text">I like farming, compost and badgers. Today I will be mostly wearing blue. I'm also out, standing in my field in this picture.</p>
+            </div>
+
+          </div>
         </div>
       </div>
+
 
 
     </div>
