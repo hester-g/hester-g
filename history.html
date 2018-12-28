@@ -8,101 +8,39 @@
     <!-- Bootstrap CSS, then mine -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="size-stylesheet" rel="stylesheet" type="text/css" href="css/narrow.css" />
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js" defer></script>
+    <script src="js/popper.min.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+
+    <!-- My JavaScript -->
+    <script src="js/scripts.js" defer></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- check dis works -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-131440168-1" defer></script>
+    <script src="js/google-analytics.js" defer></script>
 
     <!-- title and logo -->
     <title>Mosshayne Farm</title>
     <link rel="shortcut icon" href="favicon.ico" />
+
   </head>
   <body>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 
-    <div class="heading">
-      <h1 class="display-1">History of Us, innit</h1>
+    <div class="container heading">
+      <h1 class="display-1">
+        <!-- heading here -->
+      </h1>
     </div>
 
-    <!-- the navigation bar-->
-    <nav class="navbar navbar-expand-md sticky-top navbar-custom">
-     <!-- Brand -->
-     <a class="navbar-brand" href="index.html" alt="Logo">
-      Mosshayne Farm
-     </a>
-     <!-- Toggler/collapsibe Button -->
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-       <span class="navbar-toggler-icon"></span>
-     </button>
-
-     <!-- Navbar links -->
-     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-       <ul class="navbar-nav">
-         <li class="nav-item">
-           <a class="nav-link" href="vegetables.html">Vegetables</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="accommodation.html">Places To Stay</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link disabled" href="history.html">History</a>
-         </li>
-       </ul>
-     </div>
-    </nav>
+    <!-- the navbar, imported from navigation-bar.html-->
+    <div id="loadedNavBar" class="sticky-top"></div>
 
     <!-- actual body of page-->
     <div class="container">
-
-      <br/>
-
-      <!-- intro text here -->
-      <div class="row">
-        <div class="col-md">
-          <p class="lead">
-            This is Mosshayne Farm, an organic farm that has
-            been in the Gent family for generations. Providing high-quality
-            stuff innit. Come to the farm for a good time not a long time lol.
-          </p>
-        </div>
-      </div>
-
-      <!-- sommat here -->
-      <div class="row row-gap">
-        <div class="col-md-3 ">
-          <p>
-            The farm used to produce like potatoes and stuff. <br>
-            There were orchards. <br>
-            Sheep, cows, chickens. <br>
-            Um. <br>
-            You get the picture right?
-          </p>
-        </div>
-        <div class="col-md-9 ">
-          <p>
-            I don't really know how to lay this out... So here's some
-            random text aight. But I guess I was thinking that there could base
-            a picture or a map or smth here... and then like the description
-            next to it. The ratio between this and the box/column can easily
-            be changed. Just lmk. That cool m9?
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-3">
-          <p>
-            Paragraph
-          </p>
-        </div>
-        <div class="col-md-6 ">
-          <img src="img/old-map.jpg" alt="Old Map" style="width: 100%">
-        </div>
-        <div class="col-md-3">
-          <p>
-            Paragraph
-          </p>
-        </div>
-      </div>
 
     </div>
 

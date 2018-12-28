@@ -8,66 +8,36 @@
     <!-- Bootstrap CSS, then mine -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="size-stylesheet" rel="stylesheet" type="text/css" href="css/narrow.css" />
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js" defer></script>
+    <script src="js/popper.min.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+
+    <!-- My JavaScript -->
+    <script src="js/scripts.js" defer></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- check dis works -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-131440168-1" defer></script>
+    <script src="js/google-analytics.js" defer></script>
 
     <!-- title and logo -->
     <title>Mosshayne Farm</title>
     <link rel="shortcut icon" href="favicon.ico" />
+
   </head>
   <body>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- check dis works -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131440168-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-131440168-1');
-    </script>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 
     <div class="container heading">
       <h1 class="display-1">
-        Mosshayne Farm <br> <small>A Family Farm in Exeter</small>
+        <!-- heading here -->
       </h1>
     </div>
 
-    <!-- the navigation bar-->
-    <nav class="navbar navbar-expand-md sticky-top navbar-custom">
-     <!-- Brand -->
-     <a class="navbar-brand" href="#" alt="Logo">
-      Mosshayne Farm
-     </a>
-     <!-- Toggler/collapsibe Button -->
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-       <span class="navbar-toggler-icon"></span>
-     </button>
-
-     <!-- Navbar links -->
-     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-       <ul class="navbar-nav">
-         <li class="nav-item">
-           <a class="nav-link" href="vegetables.html">Local Food</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="accommodation.html">Places To Stay</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="history.html">History</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="meet-us.html">Meet Us</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="contact-us.html">Contact Us</a>
-         </li>
-       </ul>
-     </div>
-    </nav>
+    <!-- the navbar, imported from navigation-bar.html-->
+    <div id="loadedNavBar" class="sticky-top"></div>
 
     <!-- actual body of page-->
     <div class="container">
