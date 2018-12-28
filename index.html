@@ -8,27 +8,26 @@
     <!-- Bootstrap CSS, then mine -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="size-stylesheet" rel="stylesheet" type="text/css" href="css/narrow.css" />
 
     <!-- title and logo -->
     <title>Mosshayne Farm</title>
     <link rel="shortcut icon" href="favicon.ico" />
   </head>
   <body>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- check dis works -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131440168-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-131440168-1');
-    </script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- My JavaScript -->
+    <script src="js/scripts.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- check dis works -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131440168-1"></script>
+    <script src="js/google-analytics.js"></script>
 
     <div class="container heading">
       <h1 class="display-1">
@@ -51,13 +50,19 @@
      <div class="collapse navbar-collapse" id="collapsibleNavbar">
        <ul class="navbar-nav">
          <li class="nav-item">
-           <a class="nav-link" href="vegetables.html">Vegetables</a>
+           <a class="nav-link" href="vegetables.html">Local Food</a>
          </li>
          <li class="nav-item">
            <a class="nav-link" href="accommodation.html">Places To Stay</a>
          </li>
          <li class="nav-item">
            <a class="nav-link" href="history.html">History</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="meet-us.html">Meet Us</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="contact-us.html">Contact Us</a>
          </li>
        </ul>
      </div>
@@ -124,25 +129,25 @@
         </div>
       </div-->
 
-      <div class="row equal">
+      <div class="row equal row-grid">
         <div class="col-md-4">
           <div class="col-md descriptor-boxes">
             <p>
-              Local Food
+              <a class="nav-link" href="vegetables.html">Local Food</a>
             </p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="col-md descriptor-boxes">
             <p>
-            Places to Stay
+              <a class="nav-link" href="accommodation.html">Places To Stay</a>
             </p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="col-md descriptor-boxes">
             <p>
-            Our Ethos
+              <a class="nav-link" href="#">Our Ethos</a>
             </p>
           </div>
         </div>
