@@ -15,3 +15,7 @@ $(function() {
     adjustStyle($(this).width());
   });
 });
+
+$(function(){
+  $("#loadedNavBar").load("navigation-bar.html");
+});
