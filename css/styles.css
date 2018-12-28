@@ -16,7 +16,7 @@
 
 .myCarousel {
   padding-top: 10px;
-  max-height: 550px !important;
+  /*max-height: 550px !important;*/
 }
 
 .card-img-top.profile-custom {
@@ -62,11 +62,54 @@
   padding-bottom: 20px;
 }
 
-.descriptor-boxes{
+.descriptor-boxes {
   display: flex;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
   color: #ffffff;
   background-color: #ff5500;
-  height: 200px;
 }
+
+.descriptor-boxes p {
+  opacity: 0.5;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+/* change the color of active or hovered links */
+.descriptor-boxes p:hover {
+  opacity: 1;
+}
+
+/* adding spacing between stacked columns in the grid system
+ add the row-grid class to rows where you want this */
+.row.row-grid [class*="col-"] + [class*="col-"] {
+    margin-top: 15px;
+}
+  /*  .col- (extra small devices - screen width less than 576px)
+    .col-sm- (small devices - screen width equal to or greater than 576px)
+    .col-md- (medium devices - screen width equal to or greater than 768px)
+    .col-lg- (large devices - screen width equal to or greater than 992px)
+    .col-xl- (xlarge devices - screen width equal to or greater than 1200px)*/
+
+@media (min-width: 1200px) {
+    .row.row-grid [class*="col-xl-"] + [class*="col-xl-"] {
+        margin-top: 0;
+    }
+}
+@media (min-width: 992px) {
+    .row.row-grid [class*="col-lg-"] + [class*="col-lg-"] {
+        margin-top: 0;
+    }
+}
+@media (min-width: 768px) {
+    .row.row-grid [class*="col-md-"] + [class*="col-md-"] {
+        margin-top: 0;
+    }
+}*/

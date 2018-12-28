@@ -1,0 +1,15 @@
+.navbar-custom {
+  background-color: #ff0000;
+}
+
+.descriptor-boxes {
+  height: 10vh;
+}
+
+.myCarousel {
+  height: 30vh !important;
+}
+
+.heading h1.display-1 {
+  font-size: 3.5rem;
+}
