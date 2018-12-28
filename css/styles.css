@@ -16,7 +16,7 @@
 
 .myCarousel {
   padding-top: 10px;
-  max-height: 500px !important;
+  max-height: 550px !important;
 }
 
 .card-img-top.profile-custom {
@@ -62,11 +62,11 @@
   padding-bottom: 20px;
 }
 
-/*.carousel-caption {
-  color: blue;
-  vertical-align: top;
-  font-weight: bold;
-  top: 30%;
-  transform: translateY(-50%);
-  bottom: initial;
-}*/
+.descriptor-boxes{
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  color: #ffffff;
+  background-color: #ff5500;
+  height: 200px;
+}
